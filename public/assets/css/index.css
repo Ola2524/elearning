@@ -1,0 +1,80 @@
+/* Start boxes */
+.dark-theme {
+    --first-box: rgb(73, 75, 81);
+    --second-box: rgb(73, 75, 81);
+    --third-box: rgb(73, 75, 81);
+    --fourth-box: rgb(73, 75, 81);
+}
+
+body.dark-theme .content .col-md-3:first-of-type .icon {
+    background: linear-gradient(#deafff, #9600ff);
+}
+
+body.dark-theme .content .col-md-3:nth-of-type(2) .icon {
+    background: linear-gradient(#B2DAFF, #40A3FF);
+}
+
+body.dark-theme .content .col-md-3:nth-of-type(3) .icon {
+    background: linear-gradient(#98FF98, #79CC79);
+}
+
+body.dark-theme .content .col-md-3:last-of-type .icon {
+    background: linear-gradient(#EE8D85, #E8675C);
+}
+
+.content .boxes {
+    padding-top: 30px;
+}
+
+.content .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 140px;
+}
+
+.content .col-md-3:first-of-type .box {
+    background: var(--first-box);
+}
+
+.content .col-md-3:nth-of-type(2) .box {
+    background: var(--second-box);
+}
+
+.content .col-md-3:nth-of-type(3) .box {
+    background: var(--third-box);
+}
+
+.content .col-md-3:last-of-type .box {
+    background: var(--fourth-box);
+}
+
+.content .box p {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.content .box .icon {
+    font-size: 50px;
+    color: #ffffff82;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .content .box {
+        margin-top: 10px;
+    }
+}
+/* End boxes */
+
+.content .revenue-chart,
+.content .latest-courses {
+    background-color: var(--white-color);
+}
